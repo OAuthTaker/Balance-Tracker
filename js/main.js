@@ -47,4 +47,19 @@ document.getElementById("submit").addEventListener('click', () => {
     }
 })
 
+document.getElementById("update-amt").addEventListener('keypress', function(ev){
+  if(ev.keyCode === 13 || ev.which === 13){
+    if (document.getElementById("update-amt").value != ''){
+        if (document.getElementById("add").classList.contains("active"))
+            add();
+        else
+            remove()
+        document.getElementById("update-amt").value = ''
+    }
+    else {
+        alert("Empty!!")
+    }
+  }
+});
+
 document.getElementById("reset").addEventListener('click', reset)
