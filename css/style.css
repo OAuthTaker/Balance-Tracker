@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+body {
+  background: #eaf6fa;
+  font-family: "Ranchers";
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 450px;
+  border-radius: 25px;
+  background: white;
+  border: 3px solid rgba(0, 140, 255, 0.5);
+  box-shadow: 5px 5px 7px rgba(95, 140, 224, 0.356);
+  overflow: hidden;
+}
+
+#reset {
+  background: red;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-align: center;
+  border: 3px solid black;
+  position: absolute;
+  right: 30px;
+  top: 125px;
+  cursor: pointer;
+}
+
+.balance {
+  height: 210px;
+}
+.balance > .title {
+  color: #1d4291;
+  padding: 50px 20px 25px;
+  font-size: 31px;
+}
+.balance > .amount {
+  background: #408fe9;
+  color: #ffee00;
+  width: fit-content;
+  margin: 0 auto;
+  width: 120px;
+  text-align: center;
+  padding: 7px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: 3px solid #081b83;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  margin-right: 70px;
+}
+
+.update > .head {
+  font-size: 20px;
+  border: 4px solid #061e61;
+  padding: 7px 0;
+  width: fit-content;
+  margin: auto;
+  border-radius: 27px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.update > .head > .add {
+  background-color: #abf0fc;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: -2px;
+  color: rgba(0, 0, 0, 0.712);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.update > .head > .remove {
+  background-color: #abf0fc;
+  padding: 7px;
+  padding-right: 12px;
+  color: rgba(0, 0, 0, 0.712);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.update > .head > .active {
+  background-color: #0e9ff3;
+  color: black;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+.update > .update-amt > input {
+  width: 100px;
+  padding: 10px 20px;
+  font-family: "Ranchers";
+  font-size: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 71%;
+  transform: translate(-50%, -50%);
+}
+.update > #submit {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  background: #10db10;
+  padding: 5px 20px;
+  border: 3px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+input[type=number]:focus {
+  outline: none;
+  border-width: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

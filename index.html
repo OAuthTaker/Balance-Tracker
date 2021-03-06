@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="balance">
+            <div class="title">Current Balance:-</div>
+            <div class="amount">Wait...</div>
+            <div id="reset">×</div>
+        </div>
+        <div class="update">
+            <div class="head">
+                <span class="add active" id="add">Add</span>
+                <span class="remove" id="remove">Remove</span>
+            </div>
+            <div class="update-amt">
+                <input type="number" id="update-amt">
+            </div>
+            <div id="submit">Submit</div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB7_LDeSewSpCChy2zTra_NFPAZ0l11fKY",
+    authDomain: "balance-tracker-651c2.firebaseapp.com",
+    projectId: "balance-tracker-651c2",
+    storageBucket: "balance-tracker-651c2.appspot.com",
+    messagingSenderId: "151853841270",
+    appId: "1:151853841270:web:c6a8a5358b282452941857",
+    measurementId: "G-BHD88LNFFY",
+
+    "rules": {
+        ".read": true,
+        ".write": true
+    }
+}
+ 
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
